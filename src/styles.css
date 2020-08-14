@@ -1,0 +1,66 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  /* background: linear-gradient(40deg, #5189c1 10%, #41b883 ); */
+  height: 100%;
+  color: #333;
+}
+
+.containers {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  background: linear-gradient(0deg, red, yellow);
+}
+.containers h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 15px 15px 0 0;
+  color: whitesmoke;
+}
+
+.containers h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+
+/*--------------------
+TodoItem 
+--------------------*/
+.todo-item {
+  background: #f8f8f6;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  padding: 3px 10px;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 580px;
+}
+
+.todo-item_icon {
+  display: flex;
+  flex-direction: row;
+}
+.todo-item_icon span {
+  padding: 10px;
+}
+
+.pen-icon {
+  color: #2f77d0;
+}
+.checkCircle-icon {
+  color: #5ce07d;
+}
+.trash-icon {
+  color: #d7370f;
+}
+
+/*----------------------------------------*/
