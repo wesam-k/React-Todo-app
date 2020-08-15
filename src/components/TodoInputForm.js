@@ -9,19 +9,22 @@ import "./../../src/styles.css";
 // to create a special css not coming from css local file
 // I just want to use {classes.""} from makeStyles locally of course if prefer to use css local file
 const useStyles = makeStyles(() => ({
-  form: {
-    marginLeft: "auto",
-    marginRight: "auto",
-    maxWidth: "580px;",
+  root: {
+    marginLeft: "15px",
+    marginRight: "15px",
+    maxWidth: "40rem",
   },
   TextField: {
-    width: "495px",
+    width: "33.5rem",
   },
   button: {
     marginLeft: "7px",
     height: "6.7ch",
     background: "#F8F8F6",
     boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.25)",
+    "&:focus": {
+      backgroundColor: "#F8F8F6",
+    },
   },
 }));
 
@@ -30,9 +33,9 @@ export default function InputForm(props) {
   const classes = useStyles();
 
   return (
-    <div className="">
+    <div>
       <div className="row">
-        <form className={classes.form}>
+        <form className={classes.root} id="form-Responsive ">
           <TextField
             id="custom-css-outlined-input"
             label="Add to-do here"

@@ -3,6 +3,7 @@ import React from "react";
 import { FaPen } from "react-icons/fa";
 import { FaTrash } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
+import { IconButton } from "@material-ui/core";
 
 import "../../src/styles.css";
 
@@ -21,18 +22,18 @@ export default function TodoItem(props) {
       >
         {props.item}
         <div className="todo-item_icon">
-          <span onClick={props.handleEdit} className="pen-icon">
+          <IconButton onClick={props.handleEdit} className="pen-icon">
             <FaPen />
-          </span>
-          <span
+          </IconButton>
+          <IconButton
             onClick={props.handleToggleCompleted}
             className="checkCircle-icon"
           >
             <FaCheckCircle />
-          </span>
-          <span onClick={props.handleDelete} className="trash-icon">
+          </IconButton>
+          <IconButton onClick={props.handleDelete} className="trash-icon">
             <FaTrash />
-          </span>
+          </IconButton>
         </div>
       </li>
     </div>

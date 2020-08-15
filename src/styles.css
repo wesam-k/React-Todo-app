@@ -1,6 +1,5 @@
 html {
   font-family: "Open Sans", sans-serif;
-  /* background: linear-gradient(40deg, #5189c1 10%, #41b883 ); */
   height: 100%;
   color: #333;
 }
@@ -10,7 +9,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   border-radius: 15px;
-  background: linear-gradient(0deg, red, yellow);
+  background: linear-gradient(0deg, red, #ffd23d);
 }
 .containers h1 {
   text-align: center;
@@ -42,25 +41,60 @@ TodoItem
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 580px;
+  max-width: 39rem;
+  border-left: 8px solid #febd00;
 }
 
 .todo-item_icon {
   display: flex;
   flex-direction: row;
 }
-.todo-item_icon span {
+.todo-item_icon button {
   padding: 10px;
 }
 
 .pen-icon {
-  color: #2f77d0;
+  color: #8c8c8c !important;
 }
-.checkCircle-icon {
-  color: #5ce07d;
+
+.todo-item_icon button:hover {
+  color: #d7370f !important;
 }
-.trash-icon {
-  color: #d7370f;
+.todo-item_icon button:focus {
+  background-color: transparent !important;
 }
 
 /*----------------------------------------*/
+.MuiInputBase-input {
+  padding-left: 10px !important;
+  font-size: 20px !important;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  .containers {
+    min-width: 30.5rem;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .containers h1 {
+    font-size: 3rem;
+  }
+  .containers h2 {
+    font-size: 2rem;
+  }
+
+  .todo-item {
+    width: 28rem;
+  }
+  .makeStyles-TextField-2 {
+    width: 23rem !important;
+  }
+  .makeStyles-button-3 {
+    width: 1rem;
+  }
+  .makeStyles-root-1 {
+    width: 30rem !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
