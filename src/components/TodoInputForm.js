@@ -35,7 +35,7 @@ export default function InputForm(props) {
   return (
     <div>
       <div className="row">
-        <form className={classes.root} id="form-Responsive ">
+        <form className={classes.root} id="form-responsive ">
           <TextField
             id="custom-css-outlined-input"
             label="Add to-do here"

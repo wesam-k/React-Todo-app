@@ -72,9 +72,9 @@ TodoItem
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
   .containers {
-    min-width: 30.5rem;
-    margin-left: 8px;
-    margin-right: 8px;
+    width: 28.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .containers h1 {
     font-size: 3rem;
@@ -84,16 +84,17 @@ TodoItem
   }
 
   .todo-item {
-    width: 28rem;
+    width: 26rem;
   }
   .makeStyles-TextField-2 {
-    width: 23rem !important;
+    width: 21rem !important;
   }
+
   .makeStyles-button-3 {
     width: 1rem;
   }
   .makeStyles-root-1 {
-    width: 30rem !important;
+    width: 28rem !important;
     margin-left: auto;
     margin-right: auto;
   }
