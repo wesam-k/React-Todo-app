@@ -1,8 +1,8 @@
 
  # ToDo App
  
-The purpose of this App to make the user add their own tasks with the ability to edit or delete and complete any one of those tasks
-In this project, created by React, JS, CSS, and Material-ui
+The purpose of this App to make the user add their own tasks with the ability to edit or delete and complete any one of those tasks In this project, built with React, JS, CSS, and Material-ui.
+
 
 ⚡ [Demo](https://react-todo-simple-app.netlify.app/)
 
